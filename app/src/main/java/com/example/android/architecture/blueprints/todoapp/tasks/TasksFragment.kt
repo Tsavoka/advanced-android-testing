@@ -62,6 +62,7 @@ class TasksFragment : Fragment() {
         return viewDataBinding.root
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem) =
         when (item.itemId) {
             R.id.menu_clear -> {
@@ -79,6 +80,7 @@ class TasksFragment : Fragment() {
             else -> false
         }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.tasks_fragment_menu, menu)
     }
